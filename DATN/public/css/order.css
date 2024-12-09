@@ -1,0 +1,213 @@
+/* Remove default Bootstrap borders */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: none; /* Remove borders from table cells */
+  padding: 12px; /* Add some padding */
+}
+
+.table td {
+  
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+.email-break {
+  display: block; /* Đặt phần @gmail.com xuống dòng */
+}
+
+
+
+
+.table th {
+  background-color: #f8f9fa; /* Light background for the header */
+  font-weight: bold; /* Bold text for header */
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1; /* Change background on hover */
+}
+
+/* Make sure the table is responsive */
+.table-responsive {
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Align button to the right in the table */
+
+.table .btn {
+  float: right; /* Float the button to the right */
+  margin-top: 5px; /* Maintain spacing above the button */
+  
+}
+
+/* Add some margin to the buttons */
+.btn {
+  margin-top: 5px; /* Spacing above the button */
+}
+
+
+
+.detail-order-btn{
+  background-color: #f35525 !important;
+  border: none !important;
+  max-width: 50px;
+ 
+  
+
+
+}
+
+
+
+/* Cấu hình style cho trạng thái */
+.status-label {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.status-pending {
+  background-color: #de1e18; /* Gray */
+}
+
+.status-prepared {
+  background-color: #0dcaf0; /* Blue */
+}
+
+.status-shipping {
+  background-color: #ffc107; /* Yellow */
+}
+
+.status-completed {
+  background-color: #198754; /* Green */
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .table-responsive{
+     margin-right: -10px;
+  }
+
+  .table thead {
+      display: none; /* Hide the header */
+  }
+  
+  .table th, .table td {
+      display: block; /* Stack cells vertically on smaller screens */
+      width: 100%; /* Full width for blocks */
+      box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .table th {
+      position: relative; /* Positioning for headers */
+      padding-left: 50%; /* Offset for labels */
+  }
+  
+  .table td {
+      text-align: right; /* Align text to the right */
+      padding-left: 50%; /* Offset for values */
+  }
+  
+  .table td:before {
+      content: attr(data-label); /* Use data-label for cell titles */
+      position: absolute; /* Position the label */
+      left: 0; /* Align to left */
+      width: 50%; /* Take up half the space */
+      padding-left: 10px; /* Padding for the label */
+      text-align: left; /* Align label text */
+      font-weight: bold; /* Bold label text */
+  }
+}
+
+
+
+
+@media (max-width: 820px) {
+
+
+
+
+  .table thead {
+      display: none; /* Hide the header */
+  }
+  
+  .table th, .table td {
+      display: block; /* Stack cells vertically on smaller screens */
+      width: 100%; /* Full width for blocks */
+      box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .table th {
+      position: relative; /* Positioning for headers */
+      padding-left: 50%; /* Offset for labels */
+  }
+  
+  .table td {
+      text-align: right; /* Align text to the right */
+      padding-left: 50%; /* Offset for values */
+  }
+  
+  .table td:before {
+      content: attr(data-label); /* Use data-label for cell titles */
+      position: absolute; /* Position the label */
+      left: 0; /* Align to left */
+      width: 50%; /* Take up half the space */
+      padding-left: 10px; /* Padding for the label */
+      text-align: left; /* Align label text */
+      font-weight: bold; /* Bold label text */
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  
+
+  .table thead {
+      display: none; /* Hide the header */
+  }
+  
+  .table th, .table td {
+      display: block; /* Stack cells vertically on smaller screens */
+      width: 100%; /* Full width for blocks */
+      box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .table th {
+      position: relative; /* Positioning for headers */
+      padding-left: 50%; /* Offset for labels */
+  }
+  
+  .table td {
+      text-align: right; /* Align text to the right */
+      padding-left: 50%; /* Offset for values */
+  }
+  
+  .table td:before {
+      content: attr(data-label); /* Use data-label for cell titles */
+      position: absolute; /* Position the label */
+      left: 0; /* Align to left */
+      width: 50%; /* Take up half the space */
+      padding-left: 10px; /* Padding for the label */
+      text-align: left; /* Align label text */
+      font-weight: bold; /* Bold label text */
+  }
+}
+
+
+
+
+
+

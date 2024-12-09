@@ -1,0 +1,88 @@
+{
+    "products": [
+      {
+        "name": "Giày thể thao Adidas ",
+        "price": 2500000,
+        "description": "Giày thể thao chất liệu nhẹ, êm, phù hợp cho mọi hoạt động thể thao.",
+        "size": ["38", "39", "40", "41", "42"],
+        "category": "Thể thao",
+        "image": "https://bizweb.dktcdn.net/100/413/756/products/giay-ultraboost-21-xam-fy0375-01-standard-716ef18a-ed84-45d1-b6b2-23dbfde66e16.jpg?v=1624427869687"
+      },
+      {
+        "name": "Giày công sở nam cao cấp",
+        "price": 1800000,
+        "description": "Giày da cao cấp phong cách lịch lãm, thích hợp cho công sở.",
+        "size": ["40", "41", "42", "43", "44"],
+        "category": "Công sở",
+        "image": "http://sadoza.com/upload/product/gd55/giay-da-nam-cao-cap-cong-so-hang-hieu-chuan-men.jpg"
+      },
+      {
+        "name": "Giày búp bê nữ họa tiết hoa",
+        "price": 1200000,
+        "description": "Giày búp bê nữ nhẹ nhàng, phù hợp cho mùa xuân hạ.",
+        "size": ["36", "37", "38", "39"],
+        "category": "Nữ tính",
+        "image": "https://product.hstatic.net/200000255465/product/3_7c3c7f3b63394351b600a5a56621f48c_master.png"
+      },
+      {
+        "name": "Giày thể thao Nike Air Max",
+        "price": 2800000,
+        "description": "Giày thể thao phong cách hiện đại, hỗ trợ tối đa cho chân.",
+        "size": ["39", "40", "41", "42"],
+        "category": "Thể thao",
+        "image": "https://product.hstatic.net/200000366171/product/cw4555-006_05_8d8daf56ae6048a9a11c8ece9ddca585_cd3c0d89c82d4f7884930e4f4f657ce2_master.jpg"
+      },
+      {
+        "name": "Giày sandal nam đi biển",
+        "price": 800000,
+        "description": "Sandal nam thích hợp cho dạo phố và đi biển.",
+        "size": ["40", "41", "42", "43", "44"],
+        "category": "Du lịch",
+        "image": "https://file.hstatic.net/200000104423/file/sandal-di-bien-cho-nam-2-min_45224ccad2f5486d9780f0483f90151c_grande.jpg"
+      },
+      {
+        "name": "Giày sneaker nữ màu pastel",
+        "price": 1500000,
+        "description": "Sneaker nữ màu pastel dễ phối đồ, phong cách trẻ trung.",
+        "size": ["36", "37", "38", "39"],
+        "category": "Nữ tính",
+        "image": "https://product.hstatic.net/200000726949/product/courtana_multi_963-002-029_main_sq_nt_2400x2400_773f8043fd7f4699a16e384086d4c69c_master.jpg"
+      },
+      {
+        "name": "Giày thể thao Puma EvoSpeed",
+        "price": 2200000,
+        "description": "Giày thể thao Puma dành cho những người yêu thích tốc độ.",
+        "size": ["38", "39", "40", "41", "42"],
+        "category": "Thể thao",
+        "image": "https://thegioigiaythethao.vn/images/attachment/619giay-the-thao-nam-puma-evospeed-mid-distance-194662-01%20(1).JPG"
+      },
+      {
+        "name": "Giày lười nam da mềm",
+        "price": 1000000,
+        "description": "Giày lười nam da mềm, tiện dụng cho mọi hoạt động.",
+        "size": ["39", "40", "41", "42", "43"],
+        "category": "Công sở",
+        "image": "https://thailanshoes.com/wp-content/uploads/2021/06/giay-luoi-nam-da-mem-mau-den-moc-khoa-glk02-1-2048x2048.jpg"
+      },
+      {
+        "name": "Giày búp bê nữ mùa thu đông",
+        "price": 1100000,
+        "description": "Giày búp bê nữ đế cao, chất liệu ấm áp phù hợp mùa thu đông.",
+        "size": ["36", "37", "38", "39"],
+        "category": "Nữ tính",
+        "image": "https://file.hstatic.net/1000003969/file/xanh-la__3__1024x1024.jpg"
+      },
+      {
+        "name": "Giày thể thao Under Armour",
+        "price": 2600000,
+        "description": "Giày thể thao Under Armour với thiết kế đặc biệt, hỗ trợ tối ưu cho chân.",
+        "size": ["39", "40", "41", "42"],
+        "category": "Thể thao",
+        "image": "https://supersports.com.vn/cdn/shop/files/3026545-301-1.jpg?v=1691482665&width=1000"
+      }
+      
+    ],
+    "categories": ["Thể thao", "Công sở", "Nữ tính", "Du lịch"]
+    
+  }
+  

@@ -1,0 +1,81 @@
+/* Lớp overlay nền mờ */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Đảm bảo loader luôn trên cùng */
+  }
+  
+  /* Nút loader */
+  .loader {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Tạo hình tròn */
+    background: linear-gradient(135deg, #f35525, #f5864c); /* Hiệu ứng màu sắc giọt nước */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: drip 2s infinite ease-in-out; /* Thêm hiệu ứng nhỏ giọt */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ nhẹ */
+  }
+  
+  /* Hiệu ứng nhỏ giọt */
+  @keyframes drip {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.95); /* Làm cho nút nhỏ lại khi "giọt" rơi */
+    }
+  }
+  
+  /* Các phần tử tạo hiệu ứng giọt nước bên trong nút */
+  .loader:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 12px; /* Tăng kích thước giọt nước */
+    height: 12px; /* Tăng kích thước giọt nước */
+    border-radius: 50%;
+    background: #ffffff;
+    animation: drop 2s infinite ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Thêm bóng sáng cho giọt nước */
+  }
+  
+  /* Hiệu ứng giọt rơi */
+  @keyframes drop {
+    0% {
+      top: 0;
+      opacity: 1;
+      transform: scale(1);
+    }
+    30% {
+      top: 20px;
+      opacity: 0.7;
+      transform: scale(1.1); /* Làm giọt nước lớn lên một chút */
+    }
+    50% {
+      top: 30px;
+      opacity: 0.5;
+      transform: scale(1.2); /* Giọt nước lớn nhất */
+    }
+    70% {
+      top: 35px;
+      opacity: 0.3;
+      transform: scale(1.1); /* Làm giọt nước nhỏ lại trước khi rơi xuống */
+    }
+    100% {
+      top: 40px;
+      opacity: 0;
+      transform: scale(1); /* Giọt nước mất đi khi chạm mặt đất */
+    }
+  }
+  

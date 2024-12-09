@@ -1,0 +1,438 @@
+/* Sub header */
+
+
+
+  /* Main header */
+  
+  
+ 
+ 
+
+
+/* Voucher */
+
+
+.voucher-card {
+  border: 1px solid #f0f0f0;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease, box-shadow 0.6s ease; /* Tăng thời gian lên 0.6s */
+  border-radius: 10px;
+}
+.voucher-logo {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  width: 100px;
+}
+
+.voucher-logo-member {
+  background-color: rgb(236, 215, 96);
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  width: 100px;
+}
+
+.voucher-info {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+.voucher-info h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.voucher-info p {
+  margin: 5px 0;
+  color: #555;
+}
+.voucher-apply {
+  text-align: right;
+}
+.voucher-apply button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.apply-voucher-btn{
+  background-color: #f35525 !important;
+  border: none !important;
+}
+
+
+
+
+.d-flex {
+  display: flex; /* Sử dụng flexbox để xếp hàng */
+  justify-content: center; /* Căn giữa tất cả các phần tử */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+#save-voucher-form{
+  margin-left: 350px;
+
+}
+#save-voucher-form input{
+    height: 36px;
+}
+
+#save-voucher-form button{
+  background-color: #f35525;
+  border: none;
+}
+
+.navbar-nav {
+  display: flex; /* Đảm bảo các item trong navbar cũng nằm ngang */
+  margin-left: -20px; /* Khoảng cách 50px giữa nav và form lưu voucher */
+  
+}
+
+/* Màu nền cho item đang hoạt động */
+.navbar-nav .nav-link.active {
+  background-color:#f35525  ; /* Màu cam cho nền */
+  color: #fff !important; /* Màu chữ trắng */
+  border-radius: 5px; /* Bo góc nhẹ */
+}
+
+
+.btn-secondary {
+  background-color: #f35525;
+}
+.nav-item {
+  margin-right: 20px; /* Khoảng cách giữa các item trong nav */
+}
+
+.dropdown {
+  margin-left: 10px; /* Khoảng cách giữa dropdown và item trước */
+}
+
+
+.voucher-card:hover {
+  transform: translateY(-10px); /* Nâng nhẹ lên khi hover */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  
+}
+
+.apply-voucher-btn {
+  padding: 5px 12px; /* Thay đổi kích thước nút */
+  font-size: 16px; /* Thay đổi kích thước chữ */
+  background-color: #f35525;
+  border: none;
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .voucher {
+      flex-direction: column;
+      border-radius: 10px;
+  }
+
+  .voucher .left, .voucher .right {
+      width: 100%;
+      text-align: center;
+  }
+
+  .voucher .left img {
+      max-width: 80px;
+      max-height: 80px;
+  }
+}
+
+
+/* Khung chứa voucher filter */
+.voucher-filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-pills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav-pills .nav-link {
+  color: #333;
+  background-color: #f5f5f5;
+  margin: 0 5px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #f35525;
+  color: #fff;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #e04d22;
+  color: #fff;
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: center; /* Căn giữa tất cả các phần tử bên trong */
+  align-items: center;
+  flex-direction: column; /* Đặt chiều dọc cho các phần tử bên trong */
+}
+
+.header-title {
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+  margin-top: 20px;
+  text-align: center; /* Căn giữa văn bản trong tiêu đề */
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các liên kết */
+  list-style: none; /* Bỏ dấu chấm cho danh sách */
+  padding: 0; /* Xóa padding mặc định */
+}
+
+.nav-item {
+  display: inline; /* Hiển thị các item trên cùng một dòng */
+}
+
+
+.nav-link:hover {
+  color: #333; /* Màu thay đổi khi hover */
+}
+
+/* Phần Properties */
+.properties {
+  position: relative;
+  margin-top: 50px; /* Điều chỉnh khoảng cách trên cùng */
+}
+
+.properties .item {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 20px; /* Điều chỉnh khoảng cách bên trong */
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng cho mục */
+  transition: box-shadow 0.3s ease; /* Hiệu ứng chuyển tiếp bóng */
+}
+
+.properties .item:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Tăng cường bóng khi di chuột qua */
+}
+
+.properties .item img {
+  border-radius: 10px;
+  max-width: 100%; /* Đảm bảo ảnh vừa khít với vùng chứa */
+  height: auto; /* Giữ tỷ lệ khung hình của ảnh */
+}
+
+.properties .item span.category {
+  background-color: #fbd9cf;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #1e1e1e;
+  padding: 5px 10px; /* Điều chỉnh padding */
+  display: inline-block;
+  margin-top: 10px; /* Giảm khoảng cách trên để căn chỉnh gần hơn */
+}
+
+.properties .item h5 {
+  font-size: 18px; /* Điều chỉnh kích thước chữ cho dễ đọc */
+  margin: 15px 0;
+}
+
+.properties .item h5 a {
+  color: #1e1e1e;
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.properties .item ul {
+  list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+  padding: 0;
+  border-bottom: 1px solid #eaeaea;
+  margin: 15px 0; /* Điều chỉnh khoảng cách */
+}
+
+.properties .item ul li {
+  font-size: 14px;
+  color: #4a4a4a;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.properties .item ul li span {
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.properties .item .main-button {
+  margin-top: 15px; /* Điều chỉnh khoảng cách trên cùng */
+}
+
+.properties .item .main-button a {
+  display: inline-block;
+  margin-right: 10px; /* Điều chỉnh khoảng cách giữa các nút */
+}
+
+.properties .item .main-button .btn-primary {
+  background-color: #f35525;
+  border-color: #f35525;
+}
+
+.properties .item .main-button .btn-success {
+  background-color: #333;
+  border-color: #333;
+}
+
+.properties .item .main-button .btn-primary:hover,
+.properties .item .main-button .btn-success:hover {
+  background-color: #ff5722; /* Màu nền khi hover */
+}
+
+
+.properties ul.properties-filter {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.properties ul.properties-filter li {
+  display: inline-block;
+  margin: 5px 8px;
+}
+
+.properties ul.properties-filter li a {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e1e1e;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.properties ul.properties-filter li a.is_active {
+  background-color: #f35525;
+  color: #fff;
+}
+
+.properties ul.properties-filter li a.is_active:hover {
+  color: #fff;
+}
+
+.properties ul.properties-filter li a:hover {
+  color: #f35525;
+}
+
+.properties ul.pagination {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.properties ul.pagination li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.properties ul.pagination li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none ;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.properties ul.pagination li a:hover,
+.properties ul.pagination li a.is_active {
+  background-color: #f35525;
+  color: #fff;
+}
+.voucher-row{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+  margin-top: 20px;
+  margin-top: calc(var(--bs-gutter-y)* -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+  margin-top: 200px;
+}
+  
+
+@media  (max-width: 767px) {
+.voucher-row {
+    flex-direction: column;
+    align-items: center;
+}
+/* 
+.col-md-6 {
+    width: 100% !important;
+    margin: 0 !important;
+} */
+
+
+.voucher-logo {
+    text-align: center;
+}
+
+
+.voucher-normal{
+  max-width: calc(100% - 10px) !important;
+ 
+}
+
+
+.voucher-thanh-vien{
+  max-width: calc(100% - 10px) !important;
+  
+}
+
+
+
+
+
+}
+
+
+
+

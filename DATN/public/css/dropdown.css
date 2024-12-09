@@ -1,0 +1,177 @@
+/* Định dạng cho dropdown trong nav */
+.nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav .dropdown .dropdown-toggle {
+    cursor: pointer;
+    padding: 0; /* Loại bỏ padding để menu gần với chữ hơn */
+}
+
+/* Đặt top và left để điều chỉnh vị trí menu dropdown */
+.nav .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 1;
+    top: 30%; /* Xuất hiện ngay dưới chữ "Tài khoản" */
+    left: 0;   /* Căn chỉnh bên trái với phần tử cha */
+    margin-top: 20px; /* Thay đổi khoảng cách giữa chữ và menu */
+}
+
+.nav .dropdown .dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.nav .dropdown .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Hiển thị dropdown khi hover */
+.nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hiển thị dropdown khi click (thay đổi thuộc tính nếu cần) */
+.nav .dropdown .dropdown-toggle:focus + .dropdown-menu,
+.nav .dropdown .dropdown-menu.show {
+    display: block;
+}
+
+/* Định dạng cho form-group */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Định dạng cho dropdown-content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Định dạng cho dropdown trong phần filters */
+.filters .filter-group {
+    position: relative;
+    display: inline-block;
+}
+
+.filters .filter-group h3 {
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Định dạng cho dropdown-content trong filters */
+.filters .filter-group .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Xuất hiện ngay dưới tiêu đề */
+    left: 0; /* Căn chỉnh bên trái với phần tử cha */
+    padding: 0;
+    margin-top: 2px;
+}
+
+.filters .filter-group .dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex; /* Sắp xếp nội dung theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    color: black;
+    cursor: pointer;
+}
+
+.filters .filter-group .dropdown-content li:hover {
+    background-color: #f1f1f1;
+}
+
+.filters .filter-group:hover .dropdown-content {
+    display: block;
+}
+
+/* Định dạng cho container menu */
+.menu {
+    display: flex; /* Sắp xếp các filter-group nằm trên một hàng */
+    gap: 100px; /* Khoảng cách giữa các phần tử */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+    justify-content: center;
+}
+
+/* Định dạng cho phần tử monii */
+.moni {
+    display: flex;
+    gap: 700px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    align-items: center;
+}
+
+/* Định dạng cho mỗi filter-group */
+.filter-group {
+    position: relative;
+    display: inline-block; /* Để các filter-group nằm ngang hàng */
+}
+
+.filter-group h3 {
+    cursor: pointer;
+    margin: 0;
+    padding: 8px 16px; /* Thêm padding cho tiêu đề */
+    background-color: #f1f1f1; /* Màu nền cho tiêu đề */
+    border-radius: 4px; /* Bo góc tiêu đề */
+    border: 1px solid #ddd; /* Đường viền cho tiêu đề */
+    font-weight: normal; /* Tắt in đậm chữ */
+}
+
+/* Định dạng cho hình tròn màu sắc */
+.color-sample {
+    display: inline-block;
+    width: 16px; /* Đường kính của hình tròn */
+    height: 16px; /* Đường kính của hình tròn */
+    border-radius: 50%; /* Bo tròn hình */
+    margin: 2px; /* Khoảng cách giữa các hình tròn */
+}
+
+/* Định dạng màu sắc cụ thể */
+.white { background-color: #ffffff; }
+.black { background-color: #000000; }
+.brown { background-color: #8b4513; }
+.gray { background-color: #808080; }
+.red { background-color: #ff0000; }
+.green { background-color: #008000; }
+.blue { background-color: #0000ff; }
+.yellow { background-color: #ffff00; }
+
+
+
+
+
+  

@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.mex {
+    display: flex;
+    max-width: 1430px;
+    margin: 20px auto;
+    gap: 20px; /* Khoảng cách giữa sidebar và content */
+}
+
+.sidebar {
+    width: 30%; /* Điều chỉnh độ rộng sidebar */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bo góc sidebar */
+}
+
+.sidebar ul li a {
+    color: #333; /* Màu xám đậm */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển màu mượt mà */
+}
+
+.sidebar ul li a:hover {
+    color: #007bff; /* Màu xanh khi hover */
+}
+
+.sidebar .category {
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 70%; /* Điều chỉnh độ rộng content */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bo góc content */
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.post {
+    border-radius: 8px; /* Bo góc bài viết */
+    overflow: hidden; /* Giữ cho ảnh không bị tràn ra khỏi container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm shadow cho bài viết */
+}
+
+.post img {
+    width: 100%;
+    height: 200px; /* Cố định chiều cao cho ảnh */
+    object-fit: cover; /* Giữ nguyên tỷ lệ ảnh và đảm bảo nó bao phủ toàn bộ container */
+}
+
+.post-info {
+    padding: 15px;
+}
+
+.post-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.post-info h3 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-info h3 a:hover {
+    color: #007bff;
+}
+
+.post-info p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mex {
+        flex-direction: column;
+    }
+
+    .sidebar, .content {
+        width: 100%;
+    }
+}

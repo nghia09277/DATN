@@ -1,0 +1,232 @@
+
+ /* Cart */
+.container .row .col-lg-4 .bg-light #voucher-form #voucher-input option:hover {
+  background-color: #f35525; 
+  color: #fff; 
+}
+
+
+.col-lg-4 .border .btn-success{
+  background-color: #f35525;
+  border-color: #f35525;
+}
+
+.col-lg-4 .border .btn-success:hover {
+  background-color: #613b2f; 
+  border-color: #613b2f;
+}
+
+
+
+.col-lg-4 .bg-light #voucher-form input {
+  height: 40px;
+}
+
+.col-lg-4 .bg-light #voucher-form button {
+  height: 40px;
+}
+
+
+
+.table-bordered .thead-light .quantity {
+  width: 150px;
+}
+
+
+
+.btn-minus , .btn-plus {
+  width: 40px;
+  height: 35px;
+  
+ 
+}
+
+.table-bordered .quantity-control .btn-minus {
+  background-color: #f35525;
+  color: #fff;
+  border: none;
+} 
+
+.table-bordered .quantity-control .btn-plus {
+  background-color: #f35525;
+  color: #fff;
+  border: none;
+} 
+
+
+
+
+.table-bordered .quantity-control .quantity-input {
+  max-width: 50px;
+  height: 35px;
+ 
+  text-align: center;
+}
+
+
+
+/* Related */
+
+/* Phần Properties */
+.properties {
+  position: relative;
+  margin-top: 50px; /* Điều chỉnh khoảng cách trên cùng */
+}
+
+.properties .item {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 20px; /* Điều chỉnh khoảng cách bên trong */
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng cho mục */
+  transition: box-shadow 0.3s ease; /* Hiệu ứng chuyển tiếp bóng */
+}
+
+.properties .item:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Tăng cường bóng khi di chuột qua */
+}
+
+.properties .item img {
+  border-radius: 10px;
+  max-width: 100%; /* Đảm bảo ảnh vừa khít với vùng chứa */
+  height: auto; /* Giữ tỷ lệ khung hình của ảnh */
+}
+
+.properties .item span.category {
+  background-color: #fbd9cf;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #1e1e1e;
+  padding: 5px 10px; /* Điều chỉnh padding */
+  display: inline-block;
+  margin-top: 10px; /* Giảm khoảng cách trên để căn chỉnh gần hơn */
+}
+
+.properties .item h5 {
+  font-size: 18px; /* Điều chỉnh kích thước chữ cho dễ đọc */
+  margin: 15px 0;
+}
+
+.properties .item h5 a {
+  color: #1e1e1e;
+  text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.properties .item ul {
+  list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+  padding: 0;
+  border-bottom: 1px solid #eaeaea;
+  margin: 15px 0; /* Điều chỉnh khoảng cách */
+}
+
+.properties .item ul li {
+  font-size: 14px;
+  color: #4a4a4a;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.properties .item ul li span {
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.properties .item .main-button {
+  margin-top: 15px; /* Điều chỉnh khoảng cách trên cùng */
+}
+
+.properties .item .main-button a {
+  display: inline-block;
+  margin-right: 10px; /* Điều chỉnh khoảng cách giữa các nút */
+}
+
+.properties .item .main-button .btn-primary {
+  background-color: #f35525;
+  border-color: #f35525;
+}
+
+.properties .item .main-button .btn-success {
+  background-color: #333;
+  border-color: #333;
+}
+
+.properties .item .main-button .btn-primary:hover,
+.properties .item .main-button .btn-success:hover {
+  background-color: #ff5722; /* Màu nền khi hover */
+}
+
+
+.properties ul.properties-filter {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.properties ul.properties-filter li {
+  display: inline-block;
+  margin: 5px 8px;
+}
+
+.properties ul.properties-filter li a {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e1e1e;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: all .3s;
+}
+
+.properties ul.properties-filter li a.is_active {
+  background-color: #f35525;
+  color: #fff;
+}
+
+.properties ul.properties-filter li a.is_active:hover {
+  color: #fff;
+}
+
+.properties ul.properties-filter li a:hover {
+  color: #f35525;
+}
+
+.properties ul.pagination {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.properties ul.pagination li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.properties ul.pagination li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none ;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.properties ul.pagination li a:hover,
+.properties ul.pagination li a.is_active {
+  background-color: #f35525;
+  color: #fff;
+}
+
+
+
+

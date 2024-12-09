@@ -1,0 +1,202 @@
+/* page-heading header-text */
+
+
+
+
+/* section properties  */
+.contact-menu {
+    display: block; /* Sắp xếp các filter-group theo hàng dọc */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+}
+
+/* .moni {
+    display: flex;
+    gap: 700px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    align-items: center;
+} */
+.contact-row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y)* -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+  margin-top: 200px;
+}
+.contact-filters .contact-filter-group {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.filtex {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+/* Định dạng cho dropdown-content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Định dạng cho dropdown trong phần  */
+.contact-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Căn giữa các phần tử bộ lọc */
+    gap: 10px; /* Khoảng cách giữa các phần tử bộ lọc */
+}
+
+.contact-filters .contact-filter-group {
+    flex: 1 1 auto; /* Cho phép các phần tử co giãn và tự động thay đổi kích thước */
+    min-width: 200px; /* Đặt chiều rộng tối thiểu để đảm bảo bộ lọc không quá nhỏ */
+    margin: 5px; /* Thêm khoảng cách xung quanh */
+}
+.contact-filters .contact-filter-group h3 {
+    cursor: pointer;
+    margin: 0;
+}
+/* Định dạng cho mỗi filter-group */
+.contact-filter-group {
+    position: relative;
+    display: inline-block; /* Để các filter-group nằm ngang hàng */
+}
+
+.contact-filter-group h3 {
+    cursor: pointer;
+    margin: 0;
+    padding: 8px 16px; /* Thêm padding cho tiêu đề */
+    background-color: #f1f1f1; /* Màu nền cho tiêu đề */
+    border-radius: 4px; /* Bo góc tiêu đề */
+    border: 1px solid #ddd; /* Đường viền cho tiêu đề */
+    font-weight: normal; /* Tắt in đậm chữ */
+}
+
+/* Định dạng cho hình tròn màu sắc */
+.color-sample {
+    display: inline-block;
+    width: 25px;
+    height: 21px;
+    border-radius: 14%;
+    margin: 2px;
+
+}
+
+/* Định dạng màu sắc cụ thể */
+.white { background-color: #ffffff; }
+.black { background-color: #000000; }
+.brown { background-color: #8b4513; }
+.gray { background-color: #808080; }
+.red { background-color: #ff0000; }
+.green { background-color: #008000; }
+.blue { background-color: #0000ff; }
+.yellow { background-color: #ffff00; }
+/* section properties end */
+
+
+/* pagination */
+.properties ul.pagination {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+  .properties ul.properties-filter {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .properties ul.properties-filter li {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+  
+  .properties ul.properties-filter li a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1e1e1e;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all .3s;
+  }
+  
+  .properties ul.properties-filter li a.is_active {
+    background-color: #f35525;
+    color: #fff;
+  }
+  
+  .properties ul.properties-filter li a.is_active:hover {
+    color: #fff;
+  }
+  
+  .properties ul.properties-filter li a:hover {
+    color: #f35525;
+  }
+  
+  
+  .properties ul.pagination li {
+    display: inline-block;
+    margin: 0px 5px;
+  }
+  
+  .properties ul.pagination li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50%;
+    transition: all .3s;
+  }
+  
+  .properties ul.pagination li a:hover,
+  .properties ul.pagination li a.is_active {
+    background-color: #f35525;
+    color: #fff;
+  }
+/* pagination end */

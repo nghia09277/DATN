@@ -1,0 +1,267 @@
+/* page-heading header-text */
+
+.page-heading {
+    background-image: url(../images/hinh1.webp);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+ 
+    padding: 224px 0px;
+    text-align: center;
+    margin-top: 176px;
+}
+  
+  
+  .page-heading span a {
+    color: #1e1e1e;
+  }
+  
+/* page-heading header-text end */
+
+
+
+
+
+/* section properties  */
+.menu {
+    display: flex; /* Sắp xếp các filter-group nằm trên một hàng */
+    gap: 100px; /* Khoảng cách giữa các phần tử */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+    justify-content: center;
+}
+
+.moni {
+    display: flex;
+    gap: 464px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    align-items: center;
+}
+
+.filters .filter-group {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.filtex {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+/* Định dạng cho dropdown-content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Định dạng cho dropdown trong phần filters */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Căn giữa các phần tử bộ lọc */
+    gap: 10px; /* Khoảng cách giữa các phần tử bộ lọc */
+}
+
+.filters .filter-group {
+    flex: 1 1 auto; /* Cho phép các phần tử co giãn và tự động thay đổi kích thước */
+    min-width: 200px; /* Đặt chiều rộng tối thiểu để đảm bảo bộ lọc không quá nhỏ */
+    margin: 5px; /* Thêm khoảng cách xung quanh */
+}
+.filters .filter-group h3 {
+    cursor: pointer;
+    margin: 0;
+}
+/* Định dạng cho mỗi filter-group */
+.filter-group {
+    position: relative;
+    display: inline-block; /* Để các filter-group nằm ngang hàng */
+}
+
+.filter-group h3 {
+    cursor: pointer;
+    margin: 0;
+    padding: 8px 16px; /* Thêm padding cho tiêu đề */
+    background-color: #f1f1f1; /* Màu nền cho tiêu đề */
+    border-radius: 4px; /* Bo góc tiêu đề */
+    border: 1px solid #ddd; /* Đường viền cho tiêu đề */
+    font-weight: normal; /* Tắt in đậm chữ */
+}
+
+/* Định dạng cho hình tròn màu sắc */
+.color-sample {
+    display: inline-block;
+    width: 25px;
+    height: 21px;
+    border-radius: 14%;
+    margin: 2px;
+
+}
+
+/* Định dạng màu sắc cụ thể */
+.white { background-color: #ffffff; }
+.black { background-color: #000000; }
+.brown { background-color: #8b4513; }
+.gray { background-color: #808080; }
+.red { background-color: #ff0000; }
+.green { background-color: #008000; }
+.blue { background-color: #0000ff; }
+.yellow { background-color: #ffff00; }
+/* section properties end */
+
+
+/* pagination */
+.properties ul.pagination {
+    margin-top: 50px !important;
+    margin-bottom: 60px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: inline-block !important;
+  }
+  .properties ul.properties-filter {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .properties ul.properties-filter button {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+  
+  .properties ul.properties-filter button a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1e1e1e;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all .3s;
+  }
+  
+  .properties ul.properties-filter button a.is_active {
+    background-color: #f35525;
+    color: #fff;
+  }
+  
+  .properties ul.properties-filter button a.is_active:hover {
+    color: #fff;
+  }
+  
+  .properties ul.properties-filter button a:hover {
+    color: #f35525;
+  }
+  
+  
+  .properties ul.pagination button {
+    display: inline-block;
+    margin: 0px 5px;
+  }
+  
+  .properties ul.pagination button {
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+    background-color: #1e1e1e !important;
+    color: #fff !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    border-radius: 50%!important;
+    transition: all .3s !important;
+  }
+  
+  .properties ul.pagination button a:hover,
+  .properties ul.pagination button a.is_active {
+    background-color: #f35525;
+    color: #fff;
+  }
+/* pagination end */
+@media (max-width: 768px) {
+  .page-heading {
+    background-size: cover;
+    padding: 87px 0px;
+    margin-top: 101px;
+  }
+  
+  .filters {
+      flex-direction: column; /* Sắp xếp các bộ lọc thành cột */
+      align-items: center; /* Căn giữa các bộ lọc */
+      gap: 15px; /* Khoảng cách giữa các bộ lọc */
+  }
+
+  .moni {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Điều chỉnh khoảng cách giữa các phần tử bên trong */
+      text-align: center;
+  }
+
+  .menu {
+      flex-direction: row; /* Chuyển menu thành dạng hàng ngang */
+      flex-wrap: wrap; /* Cho phép các dropdown wrap lại khi không đủ không gian */
+      justify-content: center; /* Căn giữa các dropdown */
+      gap: 10px; /* Khoảng cách giữa các dropdown */
+  }
+
+  .filter-group {
+      flex: 1 1 auto; /* Để cho phép các dropdown co giãn */
+      min-width: 100px; /* Đặt chiều rộng tối thiểu để dropdown không quá nhỏ */
+      max-width: 150px; /* Đặt chiều rộng tối đa cho dropdown */
+      text-align: center;
+  }
+
+  .dropdown-content {
+      position: relative; /* Điều chỉnh vị trí để dropdown không bị lệch khi hiển thị trên màn hình nhỏ */
+      width: 100%; /* Đặt chiều rộng của dropdown bằng với bộ lọc */
+      box-shadow: none; /* Bỏ hiệu ứng đổ bóng để giữ thiết kế gọn gàng hơn */
+  }
+
+  .dropdown-content li {
+      padding: 10px; /* Điều chỉnh padding cho các mục trong dropdown */
+      font-size: 16px; /* Điều chỉnh kích thước font chữ để dễ đọc hơn */
+  }
+
+  .color-sample {
+      width: 20px;
+      height: 20px;
+  }
+}
+
+
+
+

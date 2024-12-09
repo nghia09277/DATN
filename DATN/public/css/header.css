@@ -1,0 +1,514 @@
+.background-header {
+  background-color: #fff;
+  height: 100px; /* Giữ chiều cao cố định */
+  position: fixed; /* Giữ header cố định */
+  top: 0; /* Đặt vị trí ở trên cùng */
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.15);
+  z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+  transition: all .5s ease 0s;
+}
+
+.new{
+max-width: 1400px;
+}
+.header-row {
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+margin-top: calc(var(--bs-gutter-y)* -1);
+margin-right: calc(var(--bs-gutter-x) / -2);
+margin-left: calc(var(--bs-gutter-x) / -2);
+}
+.index-col-12 {
+flex: 0 0 auto;
+width: 100%;
+}
+.header-area {
+position: fixed; /* Đặt header là fixed */
+  top: 0; /* Đặt vị trí ở trên cùng */
+  width: 100%; /* Đảm bảo header chiếm toàn bộ chiều rộng */
+  z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+  background-color: #fff; /* Màu nền để nó nổi bật */
+  padding-bottom: 15px;
+}
+.logo{
+  width: 100px;
+}
+
+.header-area .main-nav {
+  background: transparent;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header-area .main-nav .logo {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+}
+
+.header-area .main-nav .logo h1 {
+  line-height: 100px;
+  font-size: 28px;
+
+  text-transform: uppercase;
+  color: #1e1e1e;
+  font-weight: 700;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.background-header .main-nav .logo h1 {
+  margin-top: -34px;
+}
+
+.header-area .main-nav ul.nav {
+  flex-basis: 100%;
+  margin-top: 60px;
+
+  justify-content: right;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 999;
+}
+
+.header-area .main-nav .nav li:last-child {
+  padding-right: 0px;
+}
+
+.header-area .main-nav .nav li {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.header-area .main-nav .nav li a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #1e1e1e;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  border: transparent;
+  letter-spacing: .25px;
+}
+
+.header-area .main-nav .nav li:last-child a {
+  background-color: #1e1e1e  ;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  border-radius: 20px;
+  padding-left: 0px;
+}
+
+.header-area .main-nav .nav li:last-child a i {
+  background-color: #f35525;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-left: -1px;
+}
+
+.header-area .main-nav .nav li:last-child:hover a {
+  background-color: #1e1e1e;
+}
+
+.header-area .main-nav .nav li:last-child:hover a i {
+  color: #fff;
+}
+
+.header-area .main-nav .nav li:hover a {
+  color: #f35525;
+}
+
+.header-area .main-nav .nav li a.active {
+  color: #f35525;
+}
+
+.background-header .main-nav .nav li a.active {
+  color: #f35525;
+}
+
+.header-area .main-nav .menu-trigger {
+  cursor: pointer;
+  position: absolute;
+  top: 23px;
+  width: 32px;
+  height: 40px;
+  text-indent: -9999em;
+  z-index: 99;
+  right: 20px;
+  display: none;
+}
+
+.background-header .main-nav .menu-trigger {
+  top: 22px;
+}
+
+.background-header .main-nav ul.nav {
+  margin-top: 17px;
+}
+
+.header-area .main-nav .menu-trigger span,
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #1e1e1e;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+}
+
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #1e1e1e;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 0;
+  width: 75%;
+}
+
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
+  content: "";
+}
+
+.header-area .main-nav .menu-trigger span {
+  top: 16px;
+}
+
+.header-area .main-nav .menu-trigger span:before {
+  -moz-transform-origin: 33% 100%;
+  -ms-transform-origin: 33% 100%;
+  -webkit-transform-origin: 33% 100%;
+  transform-origin: 33% 100%;
+  top: -10px;
+  z-index: 10;
+}
+
+.header-area .main-nav .menu-trigger span:after {
+  -moz-transform-origin: 33% 0;
+  -ms-transform-origin: 33% 0;
+  -webkit-transform-origin: 33% 0;
+  transform-origin: 33% 0;
+  top: 10px;
+}
+
+@media (max-width: 967px) {
+  .background-header .main-nav {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 25px 25px;
+    width: 100%;
+  }
+
+  .background-header .main-nav .nav,
+  .header-area .main-nav .nav {
+    background-color: #fff;
+  }
+
+  .background-header .main-nav .nav li a,
+  .header-area .main-nav .nav li a {
+    line-height: 50px;
+    height: 50px;
+    font-weight: 400;
+    color: #1e1e1e;
+    background-color: #fff;
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .background-header .main-nav .nav li,
+  .header-area .main-nav .nav li {
+    border-top: 1px solid #ddd;
+    background-color: #f1f0fe;
+    height: 50px;
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .header-area .main-nav .nav {
+    height: auto;
+    flex-basis: 100%;
+  }
+
+  .header-area .main-nav .logo {
+    position: absolute;
+    left: 30px;
+    top: 0px;
+  }
+
+  .background-header .main-nav .logo {
+    top: 0px;
+  }
+
+  .background-header .main-nav .border-button {
+    top: 0px !important;
+  }
+
+  .header-area .main-nav .border-button {
+    position: absolute;
+    top: 15px;
+    right: 70px;
+  }
+
+  .header-area.header-sticky .nav li a:hover,
+  .header-area.header-sticky .nav li a.active {
+    color: #ee626b !important;
+    opacity: 1;
+  }
+
+  .header-area.header-sticky .nav li.search-icon a {
+    width: 100%;
+  }
+
+  .header-area .nav li:last-child a {
+    background-color: transparent !important;
+    font-weight: 300 !important;
+    text-transform: capitalize !important;
+  }
+
+  .header-area {
+    padding: 0px 15px;
+    height: 80px;
+    box-shadow: none;
+    text-align: center;
+    
+  }
+
+  .header-area .container {
+    padding: 0px;
+  }
+
+  .header-area .logo {
+    margin-right: auto;
+  }
+
+  .header-area .menu-trigger {
+    display: block !important;
+  }
+
+  .header-area .main-nav {
+    overflow: hidden;
+    margin-top: 68px;
+   
+  }
+
+  .header-area .main-nav .nav {
+    float: none;
+    width: 100%;
+    display: none;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+    margin-left: 0px;
+  }
+
+  .header-area .main-nav .nav li:first-child {
+    border-top: 1px solid #eee;
+  }
+
+  .header-area.header-sticky .nav {
+    margin-top: 12px !important;
+  }
+
+  .background-header.header-sticky .nav {
+    margin-top: 80px !important;
+  }
+
+  .header-area .main-nav .nav li {
+    margin-top: 9px;
+    width: 100%;
+    background: #fff;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .header-area .main-nav .nav li .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    /* margin-left: 206px; */
+    width: 100%;
+  }
+}
+
+.header-area .main-nav .nav li .search-form .form-control {
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+
+}
+
+.header-area .search-form .form-control {
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.header-area .search-form .form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.header-area .search-form .btn {
+  background-color: #f35525;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  /* line-height: 40px; */
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-left: -1px;
+}
+
+.header-area .search-form .btn:hover {
+  background-color: #f35525;
+}
+
+.header-area .search-form .form-control:hover {
+  border-color: #f35525;
+  /* Màu vàng */
+}
+
+.header-area .search-form .form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.header-area .search-form .btn i {
+  color: white;
+  margin-right: 5px;
+}
+.header-area .main-nav .nav li.dropdown{
+  padding-right: 10px;
+
+  line-height: 100px;
+
+}
+
+/* Cập nhật CSS cho menu trên mobile */
+
+/* Phần CSS chung cho menu */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #333;
+padding: 15px;
+}
+
+.navbar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+}
+
+.navbar li {
+padding: 8px;
+margin-right: 10px;
+}
+
+.navbar a {
+color: white;
+text-decoration: none;
+}
+
+/* Cập nhật cho responsive menu trên điện thoại */
+@media screen and (max-width: 768px) {
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar li {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.navbar a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #444;
+}
+
+}
+
+
+/* icon giam giá */
+.item {
+position: relative;
+display: inline-block;
+}
+
+.item img {
+width: 100%;
+height: auto;
+}
+
+.discount-label {
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: #f35525;
+color: white;
+padding: 5px 10px;
+font-size: 14px;
+font-weight: bold;
+border-radius: 5px;
+z-index: 10;
+}
+

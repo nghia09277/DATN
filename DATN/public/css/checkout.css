@@ -1,0 +1,346 @@
+/*  */
+
+.card-body .text-muted {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.5); /* Giảm độ sáng màu */
+}
+
+.card-body .fw-bold {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7); /* Giảm độ sáng màu */
+}
+
+/* Áp dụng cho tất cả các thẻ h1, h2, h3... */
+h1, h2, h3, h4, h5, h6 {
+  color: rgba(0, 0, 0, 0.8); /* Giảm độ sáng màu */
+}
+
+.text-muted {
+  opacity: 0.8; /* Làm mờ văn bản */
+}
+
+  
+    .container {
+      width: 100%;
+      padding-right: var(--bs-gutter-x, .75rem);
+      padding-left: var(--bs-gutter-x, .75rem);
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1320px;
+  }
+  
+    *, ::after, ::before {
+      box-sizing: border-box;
+  }
+  
+    .section-heading {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+  
+    .checkout {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px;
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      margin-top: 200px;
+    }
+
+    .col-lg-8check, .col-lg-4check {
+      padding: 10px;
+    }
+  
+    .col-lg-8check {
+      width: 60%;
+    }
+  
+    .col-lg-4check {
+      width: 40%;
+      margin-top: 0px;
+    }
+  
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* margin-bottom: 20px; */
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+    }
+    .mb-4check {
+      margin-bottom: 1.5rem !important;
+  }
+  
+    .card-header {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0;
+      background-color: rgba(0, 0, 0, .03);
+    }
+    .h5, h5 {
+      font-size: 1.25rem;
+  }
+  
+    .card-body {
+      padding: 15px;
+      flex: 1 1 auto;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    .form-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      display: block;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      background-clip: padding-box;
+    }
+    button, input, optgroup, select, textarea {
+      margin: 0;
+      font-family: inherit;
+    
+  }
+  .card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+  }
+  /* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  } */
+  
+    .mb-3check {
+      margin-bottom: 1rem !important;
+    }
+  
+    .row .col-md-6check {
+      width: 50%;
+      padding: 0 10px;
+    }
+  
+    .form-check {
+      /* display: flex; */
+      align-items: center;
+      margin-bottom: 10px;
+      
+        display: block;
+        min-height: 1.5rem;
+        padding-left: 1.5em;
+       
+    
+    }
+    dl, ol, ul {
+      margin-top: 0;
+      margin-bottom: 1rem;
+  }
+    .form-check-input {
+      margin-right: 10px;
+    }
+  
+    .btn-primary {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      /* background-color: #007bff; */
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+    }
+    /* .w-100 {
+      width: 100% !important;
+  } */
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+  button, select {
+    text-transform: none;
+  }
+  
+    .btn-primary:hover {
+      background-color: #ff9901;
+    }
+  
+    .order-summary img {
+      width: 50px;
+      margin-right: 10px;
+    }
+  
+    .order-summary .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    .list-unstyled {
+      padding-left: 0;
+      list-style: none;
+    }
+  
+    .d-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .info-table .card-body p {
+      margin-bottom: 10px;
+    }
+    .imgcheck{
+      width: 50px;
+  
+    }
+    .card {
+      border-radius: 8px;
+      border: none;
+    }
+    
+    .card-header {
+      background-color: #f7f7f7;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .card-body {
+      background-color: #fff;
+    }
+    
+    .list-group-item {
+      border: none;
+      padding: 12px 0;
+    }
+    
+    .list-group-item + .list-group-item {
+      border-top: 1px solid #e0e0e0;
+    }
+    
+
+    .badge {
+      background-color: #8d8d8d;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 5px 8px;
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      min-width: 22px;
+      min-height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    
+    .img-thumbnail {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-body .text-muted {
+      font-size: 0.875rem;
+    }
+    
+    .card-body .fw-bold {
+      font-size: 1rem;
+    }
+    
+    /* .text-primary {
+      color: #007bff !important;
+    } */
+    
+    .text-danger {
+      color: #dc3545 !important;
+    }
+    
+    .btn-primarycheck {
+      background-color: #464645;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.2s ease-in-out;
+    }
+    
+    .btn-primarycheck:hover {
+      background-color: #f35525;
+      color: #ffffff;
+    }
+    
+    .card-body .d-flex {
+      margin-bottom: 10px;
+    }
+    
+    .card-body .d-flex:last-of-type {
+      margin-bottom: 0;
+    }
+    /* Badge hiển thị số lượng */
+
+
+    
+  
+    /* Responsive */
+    @media (max-width: 768px) {
+      .col-lg-8check, .col-lg-4check {
+        width: 100%;
+      }
+      .checkout {
+     
+        margin-top: 100px;
+      }
+    }
+
+
+
+
+
+      
+    
