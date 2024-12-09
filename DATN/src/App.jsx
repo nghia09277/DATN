@@ -80,6 +80,7 @@ const AnimatedRoutes = ({ setIsLoading }) => {
 AnimatedRoutes.propTypes = {
   setIsLoading: PropTypes.func.isRequired, // Định nghĩa prop
 };
+
 const App = () => {
   const [isLoading, setIsLoading] = useState(false);
 
